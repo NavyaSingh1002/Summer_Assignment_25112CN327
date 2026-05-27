@@ -1,14 +1,13 @@
 # Summer Assignment
 
-This repository contains my work for the Summer Assignment [Insert Subject/Course Name].
-
+This repository contains my work for the Summer Assignment 2026.
 ## Contents
-* [List the names of the folders or projects you will be adding here]
+* 
 
 ## About
 - **Student Name:** Navya Singh
-- **Course:** [Insert your course name, e.g., B.Tech Computer Science]
-- **Roll Number:** [Insert your roll number if required]
+- **Course:** B. Tech
+- **Roll Number:** 2501921520248
 
 ---
 *Last updated: May 2026*
