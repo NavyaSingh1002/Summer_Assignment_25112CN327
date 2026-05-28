@@ -1,8 +1,6 @@
 # Summer Assignment
 
 This repository contains my work for the Summer Assignment 2026.
-## Contents
-* 
 
 ## About
 - **Student Name:** Navya Singh
