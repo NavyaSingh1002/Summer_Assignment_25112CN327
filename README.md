@@ -3,8 +3,9 @@
 This repository contains my work for the Summer Assignment 2026.
 
 ## About
-- **Student Name:** Navya Singh
+- **Name:** Navya Singh
 - **Course:** B. Tech
+- **Branch:** CS (AI)
 - **Roll Number:** 2501921520248
 
 ---
