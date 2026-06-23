@@ -1,0 +1,91 @@
+#include<stdio.h>
+
+struct date
+{
+    int d, m, y;
+};
+
+struct student
+{
+    int r;
+    char n[100], ad[100];
+    struct date dob;
+};
+
+int main()
+{
+    struct student s[100];
+    int choice, r, n=0;
+    do
+    {
+       printf("\nStudent Management System");
+       printf("\n1. Add Student Details");
+       printf("\n2. Display All Student Details");
+       printf("\n3. Search Student by Roll Number");
+       printf("\n4. Update Student Address");
+       printf("\n5. Exit");
+       printf("\nEnter your choice: ");
+       scanf("%d", &choice);
+       switch (choice)
+       {
+            case 1:
+                printf("Enter details of students as [ROLL NUMBER] [NAME] [DOB] [ADDRESS]: ");
+                scanf("%d%s%d%d%d%s", &s[n].r, s[n].n, &s[n].dob.d, &s[n].dob.m, &s[n].dob.y, s[n].ad);
+                n++;
+                printf("Student added successfully.");
+                break;
+
+            case 2:
+                printf("Student Deatils: ");
+                for(int i=0; i<n; i++)
+                {
+                    printf("\nRoll Number: %d | Name: %s | Date Of Birth: %d/%d/%d | Address: %s", s[i].r, s[i].n, s[i].dob.d, s[i].dob.m, s[i].dob.y, s[i].ad);
+                }
+                break;
+
+            case 3:
+                printf("Enter Student Roll Numebr to search: ");
+                scanf("%d", &r);
+                int flag=0;
+                for(int i=0; i<n; i++)
+                {
+                    if(s[i].r==r)
+                    {
+                        printf("Roll Number: %d | Name: %s | Date Of Birth: %d/%d/%d | Address: %s", s[i].r, s[i].n, s[i].dob.d, s[i].dob.m, s[i].dob.y, s[i].ad);
+                        flag=1;
+                        break;
+                    }
+                }
+                if(flag==0)
+                    printf("Student Details Not Found.");
+                break;
+
+            case 4:
+                printf("Enter Student Roll Number to update address: ");
+                scanf("%d", &r);
+                flag=0;
+                for(int i=0; i<n; i++)
+                {
+                    if(s[i].r==r)
+                    {
+                        printf("Enter new address: ");
+                        scanf("%s", s[i].ad);
+                        printf("Address Updated Successfully.");
+                        flag=1;
+                        break;
+                    }
+                }
+                if(flag==0)
+                    printf("Student Not Found.");
+                break;
+
+            case 5:
+                printf("Exiting Student Management System.");
+                break;
+
+            default:
+                printf("Invalid choice.");
+       }
+    } while (choice!=5);
+    return 0;
+}
